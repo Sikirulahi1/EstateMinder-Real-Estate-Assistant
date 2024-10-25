@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar for House Type and Price Range -->
+        <div class="sidebar">
+            <div class="house-type">
+                <h3>House Type</h3>
+                <div class="house-buttons">
+                    <button>Condominium</button>
+                    <button>Duplex</button>
+                    <button>Manufactured Home</button>
+                    <button>Multi Family</button>
+                    <button>Other</button>
+                    <button>Quadruplex</button>
+                    <button>Single Family Residence</button>
+                    <button>Townhouse</button>
+                </div>
+            </div>
+            <div class="price-range">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="5000000" value="1000000" class="slider" id="minPrice" oninput="updatePriceRange()">
+                <input type="range" min="0" max="40000000" value="4000000" class="slider" id="maxPrice" oninput="updatePriceRange()">
+                <div class="price-display">
+                    <p>
+                        <span class="label-text">Selected Price Range:</span><br>
+                        <span class="price-range-value" id="priceRangeValue">$1,000,000 - $4,000,000</span>
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- Main Chat Interface -->
+        <div class="chat-interface">
+            <h2 style="
+    font-family: Arial, sans-serif; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #4CAF50;  /* Dark green shade for elegance */
+    text-align: center; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+    margin-top: 20px;
+">
+    EstateMinder: <span style="font-weight: 300;">Your Personal Real Estate Assistant</span>
+</h2>
+            <div class="chat-box">
+            </div>
+            <div class="input-section">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

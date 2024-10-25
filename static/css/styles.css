@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.house-type, .price-range {
+    margin-bottom: 30px;
+}
+
+.house-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between the two buttons per row */
+    gap: 10px; /* Space between the rows */
+}
+
+.house-buttons button {
+    width: 48%; /* Each button takes up almost half the width, allowing two per row */
+    padding: 10px 0; /* Adjust padding for better vertical spacing */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    text-align: center; /* Center the button text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.house-buttons button:hover {
+    background-color: #45a049;
+}
+
+.house-buttons button.active {
+    background-color: white;  /* Change the color to a highlighted one */
+    color: #45a049;
+    border: 2px solid black;
+}
+
+.price-range .slider {
+    width: 100%;
+}
+
+.chat-interface {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;  /* Ensure messages stack vertically */
+    align-items: flex-start; /* Align items to the start by default */
+}
+
+.chat-message {
+    margin: 10px 0;
+    max-width: 70%; /* Set maximum width */
+    word-wrap: break-word; /* Break long words to fit */
+}
+
+.user {
+    background-color: #4CAF50;  /* Green background */
+    color: white;                /* White text */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.bot {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-start; /* Align bot messages to the left */
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button#sendBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-range {
+    position: relative;
+    width: 300px;
+}
+
+.price-range p {
+    font-size: 14px; /* Reduced font size */
+    color: #333; /* Optional: change the text color */
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.price-display {
+    text-align: center; /* Center the text */
+    margin-top: 10px;
+}
+
+.label-text {
+    font-size: 14px; /* Smaller size for the label */
+    color: #555; /* Softer color for label */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.price-range-value {
+    font-size: 18px; /* Larger size for price */
+    color: #4CAF50; /* Green color for price */
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.property-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.property-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.property-card h2 {
+    color: #2E8B57;
+}

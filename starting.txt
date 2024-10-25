@@ -1,0 +1,31 @@
+pip install spider
+scrapy startproject chocolatescraper
+cd chocolatescraper
+scrapy genspider chocolatespider chocolate.co.uk
+scrapy list
+scrapy shell
+fetch('https://www.chocolate.co.uk/collections/all')
+
+# To Run the spider comand to do the scraping
+scrapy crawl chocolatespider
+
+# Exporting scrapy
+scrapy crawl chocolatespider -O mydata.json
+scrapy crawl chocolatespider -O mydata.csv
+
+# To save to MYSQL Database
+pip install mysql-connector-python
+
+# To Save to Postgres Database
+pip install psycopg2
+
+# User Agents with scrapy
+
+pip install scrapy-user-agents
+
+# Installing proxy stuff
+pip install scrapeops-scrapy-proxy-sdk  
+
+
+# For the newer version of selenium, something doesn"t work, we only need to downgrade the selenium
+pip install selenium==4.9.0
