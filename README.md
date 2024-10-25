@@ -23,7 +23,7 @@ EstateMinder is a powerful real estate assistant that helps users find their ide
 
 Check out the demo video to see EstateMinder in action!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tc8nUYXSTD8?si=OfIY2m-C9I3bs-O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[Link To The Video](https://youtu.be/tc8nUYXSTD8?si=NgHYATpnacB2YFnM) 
 
 ## Features
 
