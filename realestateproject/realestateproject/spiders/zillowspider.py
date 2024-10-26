@@ -12,7 +12,7 @@ class ZillowSpider(scrapy.Spider):
     name = "zillowspider"
     allowed_domains = ["www.zillow.com", "proxy.scrapeops.io"]
 
-    API_KEY = 'da5fdb70-f539-409f-99d0-5668313f82ff'
+    API_KEY = 'SCRAPY_API_KEY'
 
 
     def get_proxy_url(self, url):
